@@ -1,129 +1,140 @@
-"use client";
-import React, { useState } from "react";
-import Image from "next/image";
-import { Star, X } from "lucide-react";
+// import React from "react";
+// import Image from "next/image";
 
-interface GalleryImage {
-  src: string;
-  alt: string;
-}
+// const Gallery = () => {
+//   const images = [
+//     {
+//       src: "/img1.jpg",
+//       alt: "Children playing with colorful toys",
+//       label: "Creative Play",
+//     },
+//     {
+//       src: "/img2.jpg",
+//       alt: "Story time with kids",
+//       label: "Story Time",
+//     },
+//     {
+//       src: "/img3.jpg",
+//       alt: "Arts and crafts activity",
+//       label: "Arts & Crafts",
+//     },
+//     {
+//       src: "/img4.jpg",
+//       alt: "Outdoor playground fun",
+//       label: "Outdoor Fun",
+//     },
+//     {
+//       src: "/img5.jpg",
+//       alt: "Learning environment",
+//       label: "Learning Space",
+//     },
+//     {
+//       src: "/img6.jpg",
+//       alt: "Snack time",
+//       label: "Meal Time",
+//     },
+//   ];
 
-const Gallery: React.FC = () => {
-  const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
+//   return (
+//     <section className="py-20 bg-white relative overflow-hidden">
+//       {/* Background decorations */}
+//       <div className="absolute top-20 right-10 w-32 h-32 bg-orange-200 rounded-full opacity-30" />
+//       <div className="absolute bottom-20 left-10 w-40 h-40 bg-purple-200 rounded-full opacity-20" />
 
-  const galleryImages: GalleryImage[] = [
-    {
-      src: "/img1.jpg",
-      alt: "Children playing",
-    },
-    {
-      src: "/img2.jpg",
-      alt: "Art activity",
-    },
-    {
-      src: "/img3.jpg",
-      alt: "Outdoor activities",
-    },
-    // {
-    //   src: "/img8.jpg",
-    //   alt: "Music & Dance",
-    // },
-    {
-      src: "/img5.jpg",
-      alt: "Group activities",
-    },
-    {
-      src: "/img6.jpg",
-      alt: "Story time",
-    },
-    // {
-    //   src: "/img7.jpg",
-    //   alt: "Science experiments",
-    // },
-    // {
-    //   src: "/img9.jpg",
-    //   alt: "Music & Dance",
-    // },
-    // {
-    //   src: "/img10.jpg",
-    //   alt: "Music & Dance",
-    // },
-  ];
+//       <div className="container mx-auto px-6 relative z-10">
+//         <div className="mb-20">
+//           <p className="text-orange-500 font-medium mb-2 text-sm uppercase tracking-wider">
+//             OUR SPACE
+//           </p>
+//           <h2 className="text-4xl font-bold text-gray-800">See Us in Action</h2>
+//           {/* <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+//             Take a peek into our vibrant learning environment where children
+//             explore, create, and grow every day.
+//           </p> */}
+//         </div>
 
-  return (
-    <div className="relative min-h-screen bg-green-50 py-20">
-      {/* Animated background blobs */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-red-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob" />
-        <div className="absolute top-40 right-10 w-32 h-32 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000" />
-        <div className="absolute bottom-20 left-20 w-32 h-32 bg-pink-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000" />
-      </div>
+//         {/* Masonry Grid Layout */}
+//         <div className="grid md:grid-cols-3 gap-6">
+//           {/* Large featured image */}
+//           <div className="md:col-span-2 md:row-span-2 group relative overflow-hidden rounded-3xl shadow-xl">
+//             <div className="relative h-[500px]">
+//               <Image
+//                 src={images[0].src}
+//                 fill
+//                 alt={images[0].alt}
+//                 className="object-cover group-hover:scale-110 transition-transform duration-500"
+//               />
+//               <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 via-purple-900/20 to-transparent" />
+//               <div className="absolute bottom-6 left-6 text-white">
+//                 <span className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold">
+//                   {images[0].label}
+//                 </span>
+//               </div>
+//             </div>
+//           </div>
 
-      {/* Gallery content */}
-      <div className="container mx-auto px-6 pb-8">
-        <div className="text-center mb-16">
-          <div className="inline-block bg-green-100 px-4 py-2 rounded-full mb-6">
-            <span className="text-green-600 font-medium">Our Moments</span>
-          </div>
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">
-            Capturing Joy in Every{" "}
-            <span className="text-green-600">Moment</span>
-          </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Take a peek into our daily adventures and see the magic that happens
-            when children learn through play.
-          </p>
-        </div>
+//           {/* Smaller images */}
+//           {images.slice(1, 3).map((image, index) => (
+//             <div
+//               key={index}
+//               className="group relative overflow-hidden rounded-3xl shadow-lg"
+//             >
+//               <div className="relative h-[240px]">
+//                 <Image
+//                   src={image.src}
+//                   fill
+//                   alt={image.alt}
+//                   className="object-cover group-hover:scale-110 transition-transform duration-500"
+//                 />
+//                 <div className="absolute inset-0 bg-gradient-to-t from-orange-900/70 via-orange-900/10 to-transparent" />
+//                 <div className="absolute bottom-4 left-4 text-white">
+//                   <span className="bg-white/20 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-semibold">
+//                     {image.label}
+//                   </span>
+//                 </div>
+//               </div>
+//             </div>
+//           ))}
 
-        {/* Gallery grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {galleryImages.map((image, index) => (
-            <div
-              key={index}
-              className="group relative aspect-square rounded-2xl overflow-hidden bg-white p-2 shadow-lg hover:shadow-xl transition cursor-pointer"
-              onClick={() => setSelectedImage(image)}
-            >
-              <Image
-                src={image.src}
-                width={300}
-                height={300}
-                alt={image.alt}
-                className="w-full h-full object-cover rounded-xl transition-transform group-hover:scale-105"
-              />
-              
-              {/* Decorative stars */}
-              {index % 3 === 0 && (
-                <div className="absolute -top-2 -right-2 bg-green-400 p-2 rounded-full">
-                  <Star className="w-4 h-4 text-white animate-pulse" />
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
+//           {/* Bottom row */}
+//           {images.slice(3).map((image, index) => (
+//             <div
+//               key={index}
+//               className="group relative overflow-hidden rounded-3xl shadow-lg"
+//             >
+//               <div className="relative h-[240px]">
+//                 <Image
+//                   src={image.src}
+//                   fill
+//                   alt={image.alt}
+//                   className="object-cover group-hover:scale-110 transition-transform duration-500"
+//                 />
+//                 <div className="absolute inset-0 bg-gradient-to-t from-purple-900/70 via-purple-900/10 to-transparent" />
+//                 <div className="absolute bottom-4 left-4 text-white">
+//                   <span className="bg-white/20 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-semibold">
+//                     {image.label}
+//                   </span>
+//                 </div>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
 
-        {/* Modal for enlarged image view */}
-        {selectedImage && (
-          <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
-            <div className="relative max-w-4xl w-full bg-white rounded-2xl overflow-hidden">
-              <button
-                onClick={() => setSelectedImage(null)}
-                className="absolute top-4 right-4 bg-green-300 p-2 rounded-full hover:bg-green-500 transition"
-              >
-                <X className="w-6 h-6 text-white" />
-              </button>
-              <Image
-                src={selectedImage.src}
-                width={800}
-                height={600}
-                alt={selectedImage.alt}
-                className="w-full h-auto"
-              />
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-};
+//         {/* CTA */}
+//         {/* <div className="text-center mt-12">
+//           <p className="text-gray-600 mb-6">
+//             Want to see more? Schedule a tour and experience it yourself!
+//           </p>
+//           <a
+//             href="/contact"
+//             className="bg-orange-500 text-white px-10 py-4 rounded-full hover:bg-orange-600 transition-all shadow-lg hover:shadow-xl inline-block font-semibold"
+//           >
+//             Book Your Visit
+//           </a>
+//         </div> */}
+//       </div>
+//     </section>
+//   );
+// };
 
-export default Gallery;
+// export default Gallery;

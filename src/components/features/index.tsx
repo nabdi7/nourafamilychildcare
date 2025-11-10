@@ -1,5 +1,5 @@
-import { Shield, Heart, Users, Clock } from 'lucide-react';
-import { ReactNode } from 'react';
+import { Shield, Heart, Users, Clock } from "lucide-react";
+import { ReactNode } from "react";
 
 export interface Feature {
   icon: ReactNode;
@@ -10,22 +10,26 @@ export interface Feature {
 export const features: Feature[] = [
   {
     icon: <Shield className="w-6 h-6 text-white" />,
-    title: "Licensed & Certified",
-    description: "Our facility and staff meet the highest safety and state standards"
+    title: "Safe & Secure",
+    description:
+      "A trusted, child-proofed environment where your little ones are always protected and watched",
   },
   {
     icon: <Heart className="w-6 h-6 text-white" />,
-    title: "Nurturing Environment",
-    description: "Creating a loving and supportive space for every child to thrive"
+    title: "Caring Supervision",
+    description:
+      "Warm, attentive caregivers who treat every child with love and patience",
   },
   {
     icon: <Users className="w-6 h-6 text-white" />,
-    title: "Small Class Sizes",
-    description: "Ensuring individual attention and personalized care for each child"
+    title: "Small Groups",
+    description:
+      "Low child-to-caregiver ratios ensuring your child gets the attention they deserve",
   },
   {
     icon: <Clock className="w-6 h-6 text-white" />,
     title: "Flexible Hours",
-    description: "Convenient scheduling options to support working parents"
-  }
+    description:
+      "Drop-off and pick-up times that work around your busy schedule",
+  },
 ];

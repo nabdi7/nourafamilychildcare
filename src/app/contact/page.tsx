@@ -2,20 +2,20 @@ import React from "react";
 import Contact from "@/components/contact/Contact";
 
 export const metadata = {
-  title: "Contact Us | Hiba Family Childcare",
+  title: "Contact Us",
   description:
-    "Get in touch with Hiba Family Childcare to learn more about our childcare in Seattle WA. We provide quality early education and nurturing care for children of all ages.",
+    "Contact Noura Family Childcare in Auburn WA to schedule a visit and discover our exceptional early learning programs and personalized care.",
   openGraph: {
-    title: "Contact Us | Hiba Family Childcare",
+    title: "Contact Us",
     description:
-      "Get in touch with Hiba Family Childcare to learn more about our childcare in Seattle WA. We provide quality early education and nurturing care for children of all ages.",
+      "Contact Noura Family Childcare in Auburn WA to schedule a visit and discover our exceptional early learning programs and personalized care.",
     type: "website",
-    url: "https://hibafamilychildcare.com/contact",
+    url: "https://nourafamilychildcare.com/contact",
   },
   twitter: {
-    title: "Contact Us | Hiba Family Childcare",
+    title: "Contact Us",
     description:
-      "Get in touch with Hiba Family Childcare to learn more about our childcare in Seattle WA. We provide quality early education and nurturing care for children of all ages.",
+      "Contact Noura Family Childcare in Auburn WA to schedule a visit and discover our exceptional early learning programs and personalized care.",
   },
 };
 

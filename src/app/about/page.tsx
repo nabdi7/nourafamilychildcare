@@ -2,20 +2,20 @@ import React from "react";
 import AboutPage from "@/components/about/AboutPage";
 
 export const metadata = {
-  title: "About Us | Hiba Family Childcare",
+  title: "About Us",
   description:
-    "Licensed home-based childcare center in Seattle WA providing quality early education and nurturing care for children of all ages. Discover our experienced team and child-centered approach.",
+    "Learn about our warm, family-focused childcare in Auburn WA. We provide exceptional early learning with experienced, caring educators in a nurturing home environment where every child thrives.",
   openGraph: {
-    title: "About Us | Hiba Family Childcare",
+    title: "About Us",
     description:
-      "Licensed home-based childcare center in Seattle WA providing quality early education and nurturing care for children of all ages.",
+      "Learn about our warm, family-focused childcare in Auburn WA. We provide exceptional early learning with experienced, caring educators in a nurturing home environment.",
     type: "website",
-    url: "https://hibafamilychildcare.com/about",
+    url: "https://nourafamilychildcare.com/about",
   },
   twitter: {
-    title: "About Us | Hiba Family Childcare",
+    title: "About Us",
     description:
-      "Licensed home-based childcare center in Seattle WA providing quality early education and nurturing care for children of all ages.",
+      "Learn about our warm, family-focused childcare in Auburn WA. Exceptional early learning with experienced, caring educators in a nurturing home environment.",
   },
 };
 

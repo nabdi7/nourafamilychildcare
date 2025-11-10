@@ -1,6 +1,6 @@
 import React from "react";
-import { TreePine } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { quickLinks, contactInfo, businessHours, companyInfo } from "./index";
 
 const Footer = () => {
@@ -11,35 +11,52 @@ const Footer = () => {
       case "email":
         return `mailto:${text}`;
       case "location":
-        return `https://maps.app.goo.gl/qDUy3MDSiPztrfyK8`;
+        return `https://maps.app.goo.gl/Rx4vy9bu4vnesadw6`;
       default:
         return "#";
     }
   };
 
   return (
-    <footer className="bg-gray-800 text-white pt-20 pb-10">
-      <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-12 mb-16">
-          <div>
-            <div className="flex items-center gap-2 mb-6">
-              <TreePine className="w-8 h-8 text-green-400" />
-              <Link href="/" className="text-xl font-bold">
-                {companyInfo.name}
+    <footer className="relative overflow-hidden bg-purple-50">
+      <div className="absolute inset-0">
+        <div className="absolute top-20 right-20 w-96 h-96 bg-orange-100 rounded-full opacity-20 blur-3xl" />
+        <div className="absolute bottom-20 left-20 w-96 h-96 bg-purple-100 rounded-full opacity-20 blur-3xl" />
+      </div>
+
+      <div className="relative container mx-auto px-6 pt-20 pb-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          {/* Brand Section */}
+          <div className="lg:col-span-1">
+            <div className="flex items-center gap-3 mb-6">
+              <Link href="/">
+                <Image
+                  src="/logo.svg"
+                  alt="Noura Family Childcare Logo"
+                  width={64}
+                  height={64}
+                  className="w-24 h-24"
+                />
               </Link>
             </div>
-            <p className="text-gray-400">{companyInfo.tagline}</p>
+            <p className="text-gray-700 leading-relaxed font-medium">
+              {companyInfo.tagline}
+            </p>
           </div>
 
+          {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-bold mb-6">Quick Links</h3>
-            <ul className="space-y-4">
+            <h3 className="text-lg font-bold mb-6 text-gray-900">
+              Quick Links
+            </h3>
+            <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-green-400 transition"
+                    className="text-gray-700 hover:text-orange-500 transition-colors inline-flex items-center group font-medium"
                   >
+                    <span className="w-0 group-hover:w-2 h-0.5 bg-orange-500 transition-all mr-0 group-hover:mr-2" />
                     {link.label}
                   </Link>
                 </li>
@@ -47,18 +64,21 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-bold mb-6">Contact Info</h3>
+            <h3 className="text-lg font-bold mb-6 text-gray-900">
+              Get in Touch
+            </h3>
             <ul className="space-y-4">
               {contactInfo.map((info, index) => (
                 <li
                   key={index}
-                  className="flex items-center gap-2 text-gray-400"
+                  className="flex items-start gap-3 text-gray-700 group"
                 >
-                  {info.icon}
+                  <div className="mt-1 text-text-gray-400">{info.icon}</div>
                   <a
                     href={getContactLink(info.type, info.text)}
-                    className="hover:text-green-400 transition"
+                    className="hover:text-orange-500 transition-colors font-medium"
                     target={info.type === "location" ? "_blank" : undefined}
                     rel={
                       info.type === "location"
@@ -73,32 +93,39 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h3 className="text-lg font-bold mb-6">Hours of Operation</h3>
-            <ul className="space-y-4 text-gray-400">
-              <li>{businessHours.days}</li>
-              <li className="text-green-400">{businessHours.hours}</li>
-            </ul>
+          {/* Hours */}
+          <div className="max-w-fit">
+            <h3 className="text-lg font-bold mb-6 text-gray-900">
+              We&apos;re Open Daily
+            </h3>
+            <div className="bg-white rounded-2xl p-6 shadow-lg border border-purple-200">
+              <p className="text-gray-700 mb-2 font-medium">
+                {businessHours.days}
+              </p>
+              <p className="text-orange-500 font-bold text-lg">5am - 9pm</p>
+            </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-700 pt-8 text-center text-gray-400">
-          <p>
-            &copy; {new Date().getFullYear()} {companyInfo.copyright}. All
-            rights reserved.
-          </p>
-        </div>
-
-        <div className="flex justify-center items-center gap-2 text-gray-400">
-          <span>Made by</span>
-          <a
-            href={companyInfo.developer.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-green-400 hover:text-green-600 transition"
-          >
-            {companyInfo.developer.name}
-          </a>
+        {/* Bottom Section */}
+        <div className="border-t border-gray-300 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-gray-700 font-medium text-center md:text-left">
+              &copy; {new Date().getFullYear()} {companyInfo.copyright}. All
+              rights reserved.
+            </p>
+            <div className="flex items-center gap-2 text-gray-700 font-medium">
+              <span>Made by</span>
+              <a
+                href={companyInfo.developer.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-orange-500 hover:text-orange-600 transition-colors "
+              >
+                {companyInfo.developer.name}
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

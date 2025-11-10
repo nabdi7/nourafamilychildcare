@@ -1,30 +1,30 @@
-import React from "react";
-import Gallery from "@/components/gallery/Gallery";
+// import React from "react";
+// import Gallery from "@/components/gallery/Gallery";
 
-export const metadata = {
-  title: "Our Gallery | Hiba Family Childcare",
-  description:
-    "View our gallery of images showcasing our childcare in Seattle WA. Discover our child-centered approach and nurturing environment.",
-  openGraph: {
-    title: "Our Gallery | Hiba Family Childcare",
-    description:
-      "View our gallery of images showcasing our childcare in Seattle WA. Discover our child-centered approach and nurturing environment.",
-    type: "website",
-    url: "https://hibafamilychildcare.com/gallery",
-  },
-  twitter: {
-    title: "Our Gallery | Hiba Family Childcare",
-    description:
-      "View our gallery of images showcasing our childcare in Seattle WA. Discover our child-centered approach and nurturing environment.",
-  },
-};
+// export const metadata = {
+//   title: "Our Gallery",
+//   description:
+//     "Explore photos of our warm, nurturing childcare environment in Auburn WA. See our play spaces, learning activities, and happy children.",
+//   openGraph: {
+//     title: "Our Gallery",
+//     description:
+//       "Explore photos of our warm, nurturing childcare environment in Auburn WA. See our play spaces, learning activities, and happy children.",
+//     type: "website",
+//     url: "https://nourafamilychildcare.com/gallery",
+//   },
+//   twitter: {
+//     title: "Our Gallery",
+//     description:
+//       "Explore photos of our warm, nurturing childcare environment in Auburn WA. See our play spaces, learning activities, and happy children.",
+//   },
+// };
 
-const page = () => {
-  return (
-    <div>
-      <Gallery />
-    </div>
-  );
-};
+// const page = () => {
+//   return (
+//     <div>
+//       <Gallery />
+//     </div>
+//   );
+// };
 
-export default page;
+// export default page;

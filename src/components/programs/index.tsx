@@ -10,27 +10,31 @@ export interface Program {
 
 export const programs: Program[] = [
   {
-    icon: <Baby className="w-8 h-8 text-green-600" />,
+    icon: <Baby className="w-10 h-10 text-white" />,
     title: "Toddlers",
     age: "Ages 12-36 months",
-    description: "Gentle care and playful activities in a cozy, nurturing environment.",
+    description:
+      "Loving care with safe play spaces, naptime routines, and attentive supervision.",
   },
   {
-    icon: <Users className="w-8 h-8 text-green-600" />,
+    icon: <Users className="w-10 h-10 text-white" />,
     title: "Preschool Age",
     age: "Ages 3-4",
-    description: "Social playtime, fun activities, and friendly interaction with other children.",
+    description:
+      "Group playtime, snack breaks, and plenty of fun in a safe, watchful environment.",
   },
   {
-    icon: <Star className="w-8 h-8 text-green-600" />,
+    icon: <Star className="w-10 h-10 text-white" />,
     title: "Pre-K Age",
     age: "Ages 4-5",
-    description: "Engaging activities, storytime, and creative play throughout the day.",
+    description:
+      "Active play, outdoor time, and creative activities with caring supervision.",
   },
   {
-    icon: <Sun className="w-8 h-8 text-green-600" />,
+    icon: <Sun className="w-10 h-10 text-white" />,
     title: "Kindergarten Age",
     age: "Ages 5-6",
-    description: "Fun-filled days with arts, crafts, games, and supervised playtime.",
+    description:
+      "Energetic play, group games, and structured activities in a fun, safe space.",
   },
 ];

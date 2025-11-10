@@ -1,27 +1,70 @@
 export default function Head() {
   return (
     <>
-      <title>Hiba Family Childcare | Licensed Family Childcare in Seattle WA</title>
+      <title>
+        Noura Family Childcare | Trusted Family Childcare in Auburn WA
+      </title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta charSet="utf-8" />
-      <link rel="apple-touch-icon" sizes="57x57" href="/favicon.ico" />
-      
+
+      {/* Favicons */}
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+      />
+      <link rel="manifest" href="/site.webmanifest" />
+      <link rel="icon" href="/favicon.ico" />
+
       {/* Primary Meta Tags */}
-      <meta name="description" content="Licensed family childcare center in Seattle WA providing quality early childhood education and care for children of all ages. Offering full-time and part-time programs, experienced caregivers, and a nurturing home-based learning environment." />
-      <meta name="keywords" content="childcare, daycare, family childcare, early childhood education, seattle wa, preschool, infant care, toddler care" />
-      
+      <meta
+        name="description"
+        content="Warm, nurturing family childcare in Auburn WA offering exceptional early learning experiences for infants, toddlers, and preschoolers. Licensed home-based care with flexible scheduling and personalized attention for every child."
+      />
+      <meta
+        name="keywords"
+        content="childcare, daycare, family childcare, early childhood education, auburn wa, auburn childcare, preschool, infant care, toddler care, home-based childcare, family daycare auburn"
+      />
+
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://www.hibafamilychildcare.com" />
-      <meta property="og:title" content="Hiba Family Childcare | Licensed Family Childcare in Seattle WA" />
-      <meta property="og:description" content="Licensed family childcare center providing quality early childhood education and care for children of all ages. Nurturing home-based learning environment." />
-      
+      <meta property="og:url" content="https://www.nourafamilychildcare.com" />
+      <meta
+        property="og:title"
+        content="Noura Family Childcare | Trusted Family Childcare in Auburn WA"
+      />
+      <meta
+        property="og:description"
+        content="Warm, nurturing family childcare offering exceptional early learning experiences for infants, toddlers, and preschoolers. Licensed home-based care in Auburn WA with flexible scheduling and personalized attention."
+      />
+
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://www.hibafamilychildcare.com" />
-      <meta property="twitter:title" content="Hiba Family Childcare | Licensed Family Childcare in Seattle WA" />
-      <meta property="twitter:description" content="Licensed family childcare center providing quality early childhood education and care for children of all ages. Nurturing home-based learning environment." />
-      
+      <meta
+        property="twitter:url"
+        content="https://www.nourafamilychildcare.com"
+      />
+      <meta
+        property="twitter:title"
+        content="Noura Family Childcare | Trusted Family Childcare in Auburn WA"
+      />
+      <meta
+        property="twitter:description"
+        content="Warm, nurturing family childcare offering exceptional early learning for infants, toddlers, and preschoolers in Auburn WA. Flexible scheduling with personalized attention."
+      />
+
       <link rel="icon" href="/favicon.ico" />
     </>
   );

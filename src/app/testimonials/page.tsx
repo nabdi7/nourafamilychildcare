@@ -2,20 +2,20 @@ import React from "react";
 import TestimonialsPage from "@/components/testimonials/TestimonialsPage";
 
 export const metadata = {
-  title: "Testimonials | Hiba Family Childcare",
+  title: "Testimonials",
   description:
-    "Read testimonials from parents and families who have experienced Hiba Family Childcare's nurturing environment and quality early education in Seattle WA.",
+    "Hear from families who trust Noura Family Childcare. Read parent testimonials about our caring educators and exceptional early learning programs.",
   openGraph: {
-    title: "Testimonials | Hiba Family Childcare",
+    title: "Testimonials",
     description:
-      "Read testimonials from parents and families who have experienced Hiba Family Childcare's nurturing environment and quality early education in Seattle WA.",
+      "Hear from families who trust Noura Family Childcare. Read parent testimonials about our caring educators and exceptional early learning programs.",
     type: "website",
-    url: "https://hibafamilychildcare.com/testimonials",
+    url: "https://nourafamilychildcare.com/testimonials",
   },
   twitter: {
-    title: "Testimonials | Hiba Family Childcare",
+    title: "Testimonials",
     description:
-      "Read testimonials from parents and families who have experienced Hiba Family Childcare's nurturing environment and quality early education in Seattle WA.",
+      "Hear from families who trust Noura Family Childcare. Read parent testimonials about our caring educators and exceptional early learning programs.",
   },
 };
 

@@ -1,67 +1,97 @@
 import React from "react";
 import Image from "next/image";
-import { Star } from "lucide-react";
+// import { Sparkles, Users, Award } from "lucide-react";
 import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="relative h-screen overflow-hidden bg-green-50">
+    <div className="relative min-h-screen overflow-hidden bg-purple-50">
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-red-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob" />
-        <div className="absolute top-40 right-10 w-32 h-32 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000" />
-        <div className="absolute -bottom-8 left-20 w-32 h-32 bg-pink-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000" />
+        <div className="absolute top-32 right-20 w-40 h-40 bg-orange-200 rounded-full opacity-40 animate-pulse" />
+        <div className="absolute bottom-32 left-20 w-56 h-56 bg-purple-200 rounded-full opacity-30" />
+        <div className="absolute top-1/2 left-1/3 w-32 h-32 bg-orange-100 rounded-full opacity-50" />
       </div>
 
       <div className="relative container mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-12 items-center py-24">
-          <div>
-            <div className="inline-flex items-center bg-green-100 px-4 py-2 rounded-full mb-6">
-              <span className="text-green-600 font-medium">
-                Open 24 Hours Daily
-              </span>
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-800 leading-tight mb-6">
-              Growing Minds,
-              <span className="text-green-600">Nurturing Hearts</span>
+        <div className="grid md:grid-cols-2 gap-16 items-center py-20 ">
+          {/* Left Content */}
+          <div className="space-y-6">
+            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
+              Where Dreams
+              <span className="block text-purple-600">Grow Big</span>
             </h1>
-            <p className="text-lg text-gray-600 mb-8">
-              Experience a loving environment where your child will learn, play,
-              and grow. Our experienced staff create magical moments every day.
+            <p className="text-xl text-gray-600 leading-relaxed">
+              A safe, engaging environment where children discover their
+              potential through creative play and meaningful connections.
             </p>
-            <div className="flex gap-4 flex-wrap">
+
+            {/* Feature cards */}
+            {/* <div className="grid grid-cols-3 gap-4 pt-6">
+              <div className="bg-white p-4 rounded-2xl shadow-md text-center">
+                <Users className="w-8 h-8 text-purple-600 mx-auto mb-2" />
+                <p className="text-sm font-semibold text-gray-700">
+                  Expert Staff
+                </p>
+              </div>
+              <div className="bg-white p-4 rounded-2xl shadow-md text-center">
+                <Award className="w-8 h-8 text-orange-500 mx-auto mb-2" />
+                <p className="text-sm font-semibold text-gray-700">
+                  Licensed Care
+                </p>
+              </div>
+              <div className="bg-white p-4 rounded-2xl shadow-md text-center">
+                <Sparkles className="w-8 h-8 text-purple-600 mx-auto mb-2" />
+                <p className="text-sm font-semibold text-gray-700">
+                  Fun Learning
+                </p>
+              </div>
+            </div> */}
+
+            {/* CTA Buttons */}
+            <div className="flex gap-4 flex-wrap pt-4">
               <Link
                 href="/contact"
-                className="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition inline-block text-center"
+                className="bg-orange-500 text-white px-10 py-4 rounded-full hover:bg-orange-600 transition-all shadow-lg hover:shadow-xl inline-block text-center font-semibold"
               >
-                Register Now
+                Enroll Today
               </Link>
               <Link
                 href="/programs"
-                className="bg-white text-green-600 px-8 py-3 rounded-full hover:bg-green-50 transition border-2 border-green-600 inline-block text-center"
+                className="bg-white text-purple-600 px-10 py-4 rounded-full hover:bg-purple-50 transition-all border-2 border-purple-600 inline-block text-center font-semibold"
               >
-                View Programs
+                Our Programs
               </Link>
             </div>
           </div>
 
+          {/* Right Image Section */}
           <div className="relative">
-            <div className="aspect-square rounded-full bg-white p-4 shadow-xl">
-              <Image
-                src="/img1.jpg"
-                width={500}
-                height={400}
-                alt="Children playing"
-                className="w-full h-full object-cover rounded-full"
-              />
-            </div>
-            <div className="absolute -bottom-4 -right-4 bg-yellow-400 p-6 rounded-full">
-              <Star className="w-8 h-8 text-white animate-pulse" />
-            </div>
-            <div className="absolute -top-4 -right-4 bg-green-400 p-4 rounded-full">
-              <Star className="w-6 h-6 text-white animate-bounce" />
-            </div>
-            <div className="absolute top-1/2 -left-4 bg-pink-400 p-3 rounded-full">
-              <Star className="w-4 h-4 text-white animate-ping" />
+            <div className="relative">
+              <div className="bg-purple-600 rounded-3xl overflow-hidden shadow-2xl transform rotate-3">
+                <Image
+                  src="/img1.jpg"
+                  width={600}
+                  height={700}
+                  alt="Happy children learning"
+                  className="w-full h-[500px] object-cover"
+                />
+              </div>
+
+              {/* Overlapping accent card */}
+              {/* <div className="absolute -bottom-8 -left-8 bg-orange-500 rounded-3xl p-8 shadow-xl transform -rotate-3">
+                <div className="text-white">
+                  <p className="text-4xl font-bold">500+</p>
+                  <p className="text-lg">Happy Families</p>
+                </div>
+              </div> */}
+
+              {/* Floating badge */}
+              {/* <div className="absolute -top-6 -right-6 bg-white rounded-full p-6 shadow-xl">
+                <div className="text-center">
+                  <p className="text-3xl font-bold text-purple-600">15+</p>
+                  <p className="text-sm text-gray-600">Years</p>
+                </div>
+              </div> */}
             </div>
           </div>
         </div>

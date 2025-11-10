@@ -10,12 +10,12 @@ const Menu = () => {
       {/* Menu Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="p-2 hover:bg-green-100 rounded-lg transition"
+        className="p-2 hover:bg-purple-100 rounded-lg transition"
       >
         {isOpen ? (
-          <X className="w-6 h-6 text-green-600" />
+          <X className="w-6 h-6 text-purple-600" />
         ) : (
-          <MenuIcon className="w-6 h-6 text-green-600" />
+          <MenuIcon className="w-6 h-6 text-purple-600" />
         )}
       </button>
 
@@ -33,49 +33,49 @@ const Menu = () => {
             onClick={() => setIsOpen(false)}
             className="p-4 flex justify-end"
           >
-            <X className="w-6 h-6 text-green-600" />
+            <X className="w-6 h-6 text-purple-600" />
           </button>
 
           {/* Navigation Links */}
           <nav className="flex flex-col gap-4 p-6">
             <Link
               href="/about"
-              className="text-gray-600 hover:text-green-600 transition px-4 py-2 rounded-lg hover:bg-green-50"
+              className="text-gray-600 hover:text-purple-600 transition px-4 py-2 rounded-lg hover:bg-purple-50"
               onClick={() => setIsOpen(false)}
             >
               About Us
             </Link>
             <Link
               href="/programs"
-              className="text-gray-600 hover:text-green-600 transition px-4 py-2 rounded-lg hover:bg-green-50"
+              className="text-gray-600 hover:text-purple-600 transition px-4 py-2 rounded-lg hover:bg-purple-50"
               onClick={() => setIsOpen(false)}
             >
               Programs
             </Link>
-            <Link
+            {/* <Link
               href="/gallery"
-              className="text-gray-600 hover:text-green-600 transition px-4 py-2 rounded-lg hover:bg-green-50"
+              className="text-gray-600 hover:text-purple-600 transition px-4 py-2 rounded-lg hover:bg-purple-50"
               onClick={() => setIsOpen(false)}
             >
               Our Gallery
             </Link>
             <Link
               href="/testimonials"
-              className="text-gray-600 hover:text-green-600 transition px-4 py-2 rounded-lg hover:bg-green-50"
+              className="text-gray-600 hover:text-purple-600 transition px-4 py-2 rounded-lg hover:bg-purple-50"
               onClick={() => setIsOpen(false)}
             >
               Testimonials
-            </Link>
+            </Link> */}
             <Link
               href="/contact"
-              className="text-gray-600 hover:text-green-600 transition px-4 py-2 rounded-lg hover:bg-green-50"
+              className="text-gray-600 hover:text-purple-600 transition px-4 py-2 rounded-lg hover:bg-purple-50"
               onClick={() => setIsOpen(false)}
             >
               Contact Us
             </Link>
             <Link
               href="/contact"
-              className="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition w-full mt-4"
+              className="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition w-full mt-4"
               onClick={() => setIsOpen(false)}
             >
               Register Now

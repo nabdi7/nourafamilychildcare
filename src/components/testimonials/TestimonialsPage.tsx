@@ -4,7 +4,7 @@ import { testimonials } from "./index";
 
 const TestimonialsPage = () => {
   return (
-    <section id="testimonials" className="py-20 bg-green-50">
+    <section id="testimonials" className="py-20 bg-purple-50">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-32 h-32 bg-red-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob" />
         <div className="absolute top-40 right-10 w-32 h-32 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000" />
@@ -12,8 +12,8 @@ const TestimonialsPage = () => {
       </div>
       <div className="container mx-auto px-6 pb-8">
         <div className="text-center mb-16">
-          <div className="inline-block bg-green-100 px-4 py-2 rounded-full mb-6">
-            <span className="text-green-600 font-medium">Our Reviews</span>
+          <div className="inline-block bg-purple-100 px-4 py-2 rounded-full mb-6">
+            <span className="text-purple-600 font-medium">Our Reviews</span>
           </div>
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
             What Parents Say

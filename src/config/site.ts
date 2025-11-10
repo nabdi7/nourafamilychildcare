@@ -1,8 +1,9 @@
 export const siteConfig = {
-  name: "Hiba Family Childcare",
-  url: "https://www.hibafamilychildcare.com",
-  description: "Licensed family childcare center in Seattle WA providing quality early childcare and care for children of all ages. Offering full-time and part-time programs, experienced caregivers, and a nurturing home-based learning environment focused on child development.",
-  author: "Hiba Family Childcare",
+  name: "Noura Family Childcare",
+  url: "https://www.nourafamilychildcare.com",
+  description:
+    "Quality family childcare in Auburn, Washington. We provide a warm, educational environment for children from infancy through school-age with flexible full-time and part-time options. Small groups and personalized attention.",
+  author: "Noura Family Childcare",
 };
 
 export type SiteConfig = typeof siteConfig;

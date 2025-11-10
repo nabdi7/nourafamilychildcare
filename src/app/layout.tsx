@@ -6,11 +6,11 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: {
-    default: "Hiba Family Childcare | Licensed Family Childcare in Seattle WA",
-    template: "%s | Najah Family Childcare"
+    default: "Noura Family Childcare | Trusted Family Childcare in Auburn WA",
+    template: "%s | Noura Family Childcare",
   },
   description:
-    "Licensed family childcare in Seattle WA providing quality early childhood education and care for children of all ages. Offering full-time and part-time programs, experienced caregivers, and a nurturing home-based learning environment.",
+    "Warm, nurturing family childcare in Auburn WA for infants, toddlers, and preschoolers. Trusted family childcare with flexible scheduling and personalized attention.",
   keywords: [
     "childcare",
     "daycare",
@@ -19,48 +19,50 @@ export const metadata: Metadata = {
     "preschool",
     "infant care",
     "toddler care",
-    "seattle childcare",
+    "auburn childcare",
+    "auburn wa daycare",
     "licensed daycare",
-    "home-based childcare"
+    "home-based childcare",
+    "family daycare auburn",
   ],
   metadataBase: new URL(process.env.NEXT_PUBLIC_URL ?? siteConfig.url),
   authors: [
     {
-      name: "Hiba Family Childcare",
-      url: "https://hibafamilychildcare.com",
-    }
+      name: "Noura Family Childcare",
+      url: "https://nourafamilychildcare.com",
+    },
   ],
-  creator: "Hiba Family Childcare",
-  publisher: "Hiba Family Childcare",
+  creator: "Noura Family Childcare",
+  publisher: "Noura Family Childcare",
   formatDetection: {
     email: true,
     address: true,
     telephone: true,
   },
   openGraph: {
-    title: "Hiba Family Childcare | Licensed Family Childcare in Seattle WA",
+    title: "Noura Family Childcare | Trusted Family Childcare in Auburn WA",
     description:
-      "Licensed family childcare providing quality early childhood education and care for children of all ages. Offering full-time and part-time programs in a nurturing home-based environment.",
+      "Warm, nurturing family childcare in Auburn WA for infants, toddlers, and preschoolers. Trusted family childcare with flexible scheduling and personalized attention.",
     type: "website",
-    siteName: "Hiba Family Childcare",
-    url: "https://hibafamilychildcare.com",
+    siteName: "Noura Family Childcare",
+    url: "https://nourafamilychildcare.com",
     locale: "en_US",
     images: [
       {
-        url: "https://hibafamilychildcare.com/img6.jpg",
+        url: "https://nourafamilychildcare.com/img6.jpg",
         width: 500,
         height: 500,
-        alt: "Hiba Family Childcare - Quality childcare and early education",
+        alt: "Noura Family Childcare - Nurturing family childcare in Auburn WA",
         type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hiba Family Childcare | Licensed Childcare in Seattle WA",
-    description: 
-      "Licensed family childcare providing quality early childhood education and care for children of all ages. Offering full-time and part-time programs.",
-    images: ["https://hibafamilychildcare.com/img6.jpg"],
+    title: "Noura Family Childcare | Trusted Childcare in Auburn WA",
+    description:
+      "Warm, nurturing family childcare in Auburn WA for infants, toddlers, and preschoolers. Trusted family childcare with flexible scheduling and personalized attention.",
+    images: ["https://nourafamilychildcare.com/img6.jpg"],
   },
   icons: {
     icon: "/favicon.ico",
@@ -74,13 +76,13 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   // verification: {
-  //   google: "", 
+  //   google: "",
   // },
 };
 

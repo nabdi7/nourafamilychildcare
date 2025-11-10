@@ -2,20 +2,20 @@ import React from "react";
 import ProgramsPage from "@/components/programs/ProgramsPage";
 
 export const metadata = {
-  title: "Our Programs | Hiba Family Childcare",
+  title: "Our Programs",
   description:
-    "Learn about our programs at Hiba Family Childcare, a licensed home-based childcare in Seattle WA. We provide quality early education and nurturing care for children of all ages.",
+    "Age-appropriate early learning programs for infants to preschoolers at Noura Family Childcare in Auburn WA. Nurturing home environment with flexible scheduling.",
   openGraph: {
-    title: "Our Programs | Hiba Family Childcare",
+    title: "Our Programs",
     description:
-      "Learn about our programs at Hiba Family Childcare, a licensed home-based childcare in Seattle WA. We provide quality early education and nurturing care for children of all ages.",
+      "Age-appropriate early learning programs for infants to preschoolers at Noura Family Childcare in Auburn WA. Nurturing home environment with flexible scheduling.",
     type: "website",
-    url: "https://hibafamilychildcare.com/programs",
+    url: "https://nourafamilychildcare.com/programs",
   },
   twitter: {
-    title: "Our Programs | Hiba Family Childcare",
+    title: "Our Programs",
     description:
-      "Learn about our programs at Hiba Family Childcare, a licensed home-based childcare in Seattle WA. We provide quality early education and nurturing care for children of all ages.",
+      "Age-appropriate early learning programs for infants to preschoolers at Noura Family Childcare in Auburn WA. Nurturing home environment with flexible scheduling.",
   },
 };
 
