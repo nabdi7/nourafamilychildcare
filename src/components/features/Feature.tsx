@@ -52,7 +52,7 @@ const Features = () => {
             <div className="md:col-span-3">
               <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/img6.jpg"
+                  src="/img1.jpg"
                   width={800}
                   height={500}
                   alt="Daycare facility"

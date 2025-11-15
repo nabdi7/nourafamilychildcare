@@ -24,12 +24,12 @@
 //       label: "Outdoor Fun",
 //     },
 //     {
-//       src: "/img5.jpg",
+//       src: "/img1.jpg",
 //       alt: "Learning environment",
 //       label: "Learning Space",
 //     },
 //     {
-//       src: "/img6.jpg",
+//       src: "/img2.jpg",
 //       alt: "Snack time",
 //       label: "Meal Time",
 //     },

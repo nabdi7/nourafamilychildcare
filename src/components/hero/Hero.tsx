@@ -69,7 +69,7 @@ const Hero = () => {
             <div className="relative">
               <div className="bg-purple-600 rounded-3xl overflow-hidden shadow-2xl transform rotate-3">
                 <Image
-                  src="/img1.jpg"
+                  src="/img2.jpg"
                   width={600}
                   height={700}
                   alt="Happy children learning"

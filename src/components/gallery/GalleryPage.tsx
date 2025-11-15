@@ -25,27 +25,27 @@
 //       alt: "Outdoor activities",
 //     },
 //     // {
-//     //   src: "/img8.jpg",
+//     //   src: "/img1.jpg",
 //     //   alt: "Music & Dance",
 //     // },
 //     {
-//       src: "/img5.jpg",
+//       src: "/img2.jpg",
 //       alt: "Group activities",
 //     },
 //     {
-//       src: "/img6.jpg",
+//       src: "/img3.jpg",
 //       alt: "Story time",
 //     },
 //     // {
-//     //   src: "/img7.jpg",
+//     //   src: "/img1.jpg",
 //     //   alt: "Science experiments",
 //     // },
 //     // {
-//     //   src: "/img9.jpg",
+//     //   src: "/img2.jpg",
 //     //   alt: "Music & Dance",
 //     // },
 //     // {
-//     //   src: "/img10.jpg",
+//     //   src: "/img3.jpg",
 //     //   alt: "Music & Dance",
 //     // },
 //   ];

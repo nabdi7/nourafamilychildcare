@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://nourafamilychildcare.com/img6.jpg",
+        url: "https://nourafamilychildcare.com/img2.jpg",
         width: 500,
         height: 500,
         alt: "Noura Family Childcare - Nurturing family childcare in Auburn WA",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: "Noura Family Childcare | Trusted Childcare in Auburn WA",
     description:
       "Warm, nurturing family childcare in Auburn WA for infants, toddlers, and preschoolers. Trusted family childcare with flexible scheduling and personalized attention.",
-    images: ["https://nourafamilychildcare.com/img6.jpg"],
+    images: ["https://nourafamilychildcare.com/img2.jpg"],
   },
   icons: {
     icon: "/favicon.ico",
