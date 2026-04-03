@@ -23,7 +23,7 @@ const AboutPage = () => {
       title: "Parent Handbook",
       description: "View our comprehensive guide for parents",
       icon: <FileText className="w-6 h-6" />,
-      href: "/parent-handbook.pdf",
+      href: "/parenthandbook.pdf",
     },
     {
       title: "Childcare Agreement",

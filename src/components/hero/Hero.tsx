@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-purple-50">
+    <div className="relative overflow-hidden bg-purple-50">
       <div className="absolute inset-0">
         <div className="absolute top-32 right-20 w-40 h-40 bg-orange-200 rounded-full opacity-40 animate-pulse" />
         <div className="absolute bottom-32 left-20 w-56 h-56 bg-purple-200 rounded-full opacity-30" />
