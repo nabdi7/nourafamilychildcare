@@ -109,24 +109,13 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-300 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-700 font-medium text-center md:text-left">
-              &copy; {new Date().getFullYear()} {companyInfo.copyright}. All
-              rights reserved.
-            </p>
-            <div className="flex items-center gap-2 text-gray-700 font-medium">
-              <span>Made by</span>
-              <a
-                href={companyInfo.developer.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-orange-500 hover:text-orange-600 transition-colors "
-              >
-                {companyInfo.developer.name}
-              </a>
-            </div>
-          </div>
-        </div>
+  <div className="flex justify-center items-center">
+    <p className="text-gray-700 font-medium text-center">
+      &copy; {new Date().getFullYear()} {companyInfo.copyright}. All
+      rights reserved.
+    </p>
+  </div>
+</div>
       </div>
     </footer>
   );
